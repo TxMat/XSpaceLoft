@@ -37,13 +37,13 @@ nav {
   bottom: 60px;
 }
 
-ul {
+#CATEGORIES {
   display: flex;
   justify-content: center;
   padding: 0;
 }
 
-ul li{
+#CATEGORIES {
   list-style: none;
 }
 
