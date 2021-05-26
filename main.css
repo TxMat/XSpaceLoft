@@ -37,6 +37,7 @@ h1 {
 /* ----------------- PARTIE CATEGORIES ---------------------*/
 
 nav {
+  height: 0px;
   position: relative;
   bottom: 60px;
 }
