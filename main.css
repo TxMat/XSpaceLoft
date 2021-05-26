@@ -2,8 +2,15 @@ body{
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #412203 0%, #101010 100%);
+  /* background: linear-gradient(to bottom, #814403 0%, #8C4B2F 13%); */
+  background: #735A5D;
   height: 100vh;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 /* ----------------- PARTIE HEADER ---------------------*/
@@ -13,14 +20,14 @@ header {
   align-items: center;
   flex-direction: column;
   background-color: #171717;
-  padding: 15px;
+  margin: 0px;
   text-transform: uppercase;
-	background: linear-gradient(to right, #cea07e 0%, #101010 100%);
+	background: linear-gradient(to right, #04848F 0%, #a0a0a0 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: grey;
+  color: #101010;
 }
 
 h1 {
@@ -28,6 +35,7 @@ h1 {
   /* text-shadow: rgba(0, 0, 0, 0.24) 1px 5px 2px; */
   font-variant: small-caps;
   font-style: italic;
+  font-size: 75px;
 }
 
 #logo {
@@ -55,7 +63,7 @@ nav {
 ul li a {
   width: 100px;
   height: 40px;
-  border: 1px solid grey;
+  border: 1px solid #101010;
   padding-left: 10px;
   padding-right: 10px;
   justify-content: center;
@@ -65,9 +73,10 @@ ul li a {
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 50px;
-  background-color: #101010;
+  /* background: linear-gradient(to bottom, #8C4B2F 0%, #8C4B2F 21%);*/
+  background: #8C4B2F;
   font-size: 1.2em;
-  color: grey;
+  color: #101010;
   text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: all .2s ease-in-out;
@@ -76,9 +85,9 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #814403;
-  color: #101010;
-  border: 1px solid #101010;
+  background-color: #808080;
+  color: #8C4B2F;
+  border: 1px solid #8C4B2F;
 }
 
 /* ----------------- PARTIE MAIN ---------------------*/
@@ -97,12 +106,13 @@ h2 {
   text-shadow: rgba(0, 0, 0, 0.24) 1px 5px 2px;
   font-variant: small-caps;
   font-style: italic;
-  color: grey;
+  color: #101010;
   margin-top: 0;
 }
 
 .box {
-  background-color: #171717;
+  /* background: linear-gradient(to bottom, #8C4B2F 0%, #8C4B2F 21%); */
+  background-color: #8C4B2F;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: max-content;
@@ -136,10 +146,10 @@ select {
 }
 
 select, input {
-  background-color: #101010;
-  border: 1px solid grey;
+  background-color: #8C4B2F;
+  border: 1px solid #101010;
   border-radius: 50px;
-  color: grey;
+  color: #101010;
   padding: 10px;
 }
 
@@ -158,7 +168,7 @@ select, input {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid grey;
+  border: 1px solid #101010;
   width: 100%;
   height: 200px;
   margin-top: 10px;
@@ -168,4 +178,13 @@ select, input {
 #description {
   display: flex;
   flex-direction: column;
+}
+
+.noselect{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
