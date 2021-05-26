@@ -161,7 +161,7 @@ select, input {
 
 #popup {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 #Image{
