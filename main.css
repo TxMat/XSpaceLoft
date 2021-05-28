@@ -11,7 +11,7 @@ body{
   -ms-user-select: none;
   user-select: none;
   position: relative;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 /* ----------------- PARTIE HEADER ---------------------*/
@@ -102,10 +102,41 @@ h2 {
   margin-top: 0;
 }
 
-.box {
+#filter {
+  background-color: #1717177c;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #808080;
+  z-index: 100;
+  position: absolute;
+  top: 120px;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+  font-size: 1.2em;
+  color: #808080;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-shadow: rgba(0, 0, 0, 0.24) 1px 5px 2px;
+  font-variant: small-caps;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+#filter:hover {
   background-color: #171717;
-  padding: 15px;
-  height: max-content;
+}
+
+#container-filter {
+  z-index: 100;
+  position: absolute;
+  top: 200px;
+  background-color: #1717177c;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid #808080;
+  margin: 10px;
+  border-radius: 50px;
+  padding: 10px;
 }
 
 /* ----------------- CONTAINER LEFT -------------------*/
