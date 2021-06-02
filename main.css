@@ -98,8 +98,17 @@ h2 {
   text-shadow: rgba(0, 0, 0, 0.24) 1px 5px 2px;
   font-variant: small-caps;
   font-style: italic;
-  color: #101010;
-  margin-top: 0;
+  color: #808080;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h3 {
+  margin: 0;
 }
 
 #filter {
@@ -114,27 +123,6 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px 5px 0 0;
-  font-size: 1.2em;
-  color: #808080;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  text-shadow: rgba(0, 0, 0, 0.24) 1px 5px 2px;
-  font-variant: small-caps;
-  transition: all .2s ease-in-out;
-  cursor: pointer;
-}
-
-#filter2 {
-  background-color: #1717177c;
-  width: 100px;
-  height: 40px;
-  border: 1px solid #808080;
-  z-index: 100;
-  position: absolute;
-  top: 120px;
-  margin: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 50px;
   font-size: 1.2em;
   color: #808080;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -160,28 +148,6 @@ h2 {
   padding: 10px;
 }
 
-/* ----------------- CONTAINER LEFT -------------------*/
-
-#container-left {
-  width: 600px;
-  height: 100%;
-}
-
-/* ----------------- CONTAINER RIGHT -------------------*/
-
-#container-right {
-  display: flex;
-  flex-direction: column;
-  width: 1000px;
-  height: 90%;
-  position: relative;
-}
-
-#container-right div {
-  display: flex;
-  justify-content: space-between;
-}
-
 select {
   margin-right: 10px;
   width: 100px;
@@ -200,19 +166,29 @@ select, input {
   height: 100%;
 }
 
+/* ----------------- POPUP -------------------*/
+
 #popup {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  color: #808080; 
+}
+
+.sub-container-popup {
+  padding: 10px 10px 15px;
+}
+
+.sub-container-popup ul {
+  padding-left: 30px;
 }
 
 .Image{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #101010;
   height: 150px;
-  margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 3px 3px 0 0;
 }
 
 #description {
