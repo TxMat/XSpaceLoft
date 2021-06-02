@@ -3,7 +3,7 @@ $(document).ready(function() {
     var count = 0;
 
     $("#filter").click(function() {
-        $("#container-filter").fadeToggle();
+        $("#container-filter").toggle();
         $("#filter").css("border-radius","50px");
         count += 1;
         if ((count%2)==0) {
