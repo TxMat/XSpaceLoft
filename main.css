@@ -111,6 +111,10 @@ h3 {
   margin: 0;
 }
 
+input {
+  outline: none;
+}
+
 #filter {
   background-color: #1717177c;
   width: 100px;
@@ -189,9 +193,35 @@ select, input {
   height: 150px;
   margin-bottom: 10px;
   border-radius: 3px 3px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #description {
   display: flex;
   flex-direction: column;
+}
+
+#reserve {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #808080;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  background: #171717;
+  font-size: 1.2em;
+  color: #808080;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all .2s ease-in-out;
+  text-shadow: rgba(0, 0, 0, 0.24) 1px 5px 2px;
+  font-variant: small-caps;
+  cursor: pointer;
+}
+
+#reserve:hover {
+  background: #101010;
 }
