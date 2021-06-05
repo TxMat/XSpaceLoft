@@ -54,12 +54,27 @@ var marker5 = new mapboxgl.Marker({
 .setPopup(new mapboxgl.Popup().setMaxWidth("300px").setHTML("<div id='popup'><img class='Image' src='img/loft5.jpeg'><div class='sub-container-popup'><div id='description'><h2>Loft n° 5</h2><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><h3>Features :</h3><ul><li>Surface area : 20m²</li><li>Rooms : 1</li></ul><p><input type='submit' id='reserve' value='RESERVE'></p></div></div></div>"))
 .addTo(map);
 
+var count_filterSmall = 0;
+var count_filterBig = 0;
+var count_filterOriginal = 0;
+var count_filterLuxury = 0;
+
 $("#small").click(function() {
     marker1.addTo(map);
     marker2.addTo(map);
     marker3.remove();
     marker4.remove();
     marker5.addTo(map);
+
+    if (count_filterLuxury==0 && count_filterSmall==0 && count_filterBig==0 && count_filterOriginal==0) {
+        $("#br").after("<div class='filter-resp'><p>Small <i class='fa fa-times' id='times' id='times' id='times' id='times' id='times' id='times' id='times' aria-hidden='true'></i></p></div>");
+        count_filterSmall += 1;
+        $("#luxury").css("pointer-events","none");
+        $("#big").css("pointer-events","none");
+        $("#original").css("pointer-events","none");
+    }
+
+    reset();
 
     $("#small").css("border","1px solid #101010");
     $("#small").css("background","#171717da");
@@ -81,6 +96,17 @@ $("#big").click(function() {
     marker4.addTo(map);
     marker5.remove();
 
+    if (count_filterLuxury==0 && count_filterSmall==0 && count_filterBig==0 && count_filterOriginal==0) {
+        var content = "<div class='filter-resp'><p>Big <i class='fa fa-times' id='times' id='times' id='times' id='times' id='times' id='times' id='times' aria-hidden='true'></i></p></div>";
+        $("#br").after(content);
+        count_filterBig += 1;
+        $("#small").css("pointer-events","none");
+        $("#luxury").css("pointer-events","none");
+        $("#original").css("pointer-events","none");
+    }
+
+    reset();
+
     $("#small").css("border","1px solid #808080");
     $("#small").css("background","#171717");
 
@@ -100,6 +126,16 @@ $("#original").click(function() {
     marker3.remove();
     marker4.addTo(map);
     marker5.remove();
+
+    if (count_filterLuxury==0 && count_filterSmall==0 && count_filterBig==0 && count_filterOriginal==0) {
+        $("#br").after("<div class='filter-resp'><p>Original <i class='fa fa-times' id='times' id='times' id='times' id='times' id='times' id='times' id='times' aria-hidden='true'></i></p></div>");
+        count_filterOriginal += 1;
+        $("#small").css("pointer-events","none");
+        $("#big").css("pointer-events","none");
+        $("#luxury").css("pointer-events","none");
+    }
+
+    reset();
 
     $("#small").css("border","1px solid #808080");
     $("#small").css("background","#171717");
@@ -121,6 +157,17 @@ $("#luxury").click(function() {
     marker4.remove();
     marker5.remove();
 
+    if (count_filterLuxury==0 && count_filterSmall==0 && count_filterBig==0 && count_filterOriginal==0) {
+        $("#br").after("<div class='filter-resp'><p>Luxury <i class='fa fa-times' id='times' id='times' id='times' id='times' id='times' id='times' id='times' id='times' aria-hidden='true'></i></p></div>");
+        count_filterLuxury += 1;
+        $("#small").css("pointer-events","none");
+        $("#big").css("pointer-events","none");
+        $("#original").css("pointer-events","none");
+    }
+
+    reset();
+
+
     $("#small").css("border","1px solid #808080");
     $("#small").css("background","#171717");
 
@@ -133,3 +180,29 @@ $("#luxury").click(function() {
     $("#luxury").css("border","1px solid #101010");
     $("#luxury").css("background","#171717da");
 })
+
+function reset() {
+    $("#times").click(function() {
+        $(".filter-resp").remove();
+        $("#small").css("pointer-events","auto");
+        $("#big").css("pointer-events","auto");
+        $("#original").css("pointer-events","auto");
+        $("#luxury").css("pointer-events","auto");
+        count_filterSmall = 0;
+        count_filterBig = 0;
+        count_filterOriginal = 0;
+        count_filterLuxury = 0;
+
+        $("#small").css("border","1px solid #808080");
+        $("#small").css("background","#171717");
+
+        $("#big").css("border","1px solid #808080");
+        $("#big").css("background","#171717");
+
+        $("#original").css("border","1px solid #808080");
+        $("#original").css("background","#171717");
+
+        $("#luxury").css("border","1px solid #808080");
+        $("#luxury").css("background","#171717");
+    });
+}

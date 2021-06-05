@@ -111,6 +111,13 @@ h3 {
   margin: 0;
 }
 
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------------- FILTER -------------------*/
 input {
   outline: none;
 }
@@ -158,16 +165,45 @@ select {
 }
 
 select, input {
-  background-color: #8C4B2F;
-  border: 1px solid #101010;
+  background-color: transparent;
+  border: 1px solid #808080;
   border-radius: 50px;
-  color: #101010;
   padding: 10px;
+  color: #808080;
+  transition: all .2s ease-in-out;
 }
 
-#map {
-  width: 100%;
-  height: 100%;
+select:hover, select:focus, input:hover, input:focus {
+  background-color: #171717;
+}
+
+#site-search {
+  margin-bottom: 10px;
+}
+
+.filter-resp {
+  background-color: #171717;
+  border-radius: 50px;
+  padding: 1px 10px;
+  margin-bottom: 10px;
+  width: max-content;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.filter-resp p {
+  color: #808080;
+  font-size: 12px;
+}
+
+.fa-times {
+  color: #808080;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.fa-times:hover {
+  color: #777575;
 }
 
 /* ----------------- POPUP -------------------*/
