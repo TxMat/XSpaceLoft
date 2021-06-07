@@ -204,5 +204,11 @@ function reset() {
 
         $("#luxury").css("border","1px solid #808080");
         $("#luxury").css("background","#171717");
+
+        marker1.addTo(map);
+        marker2.addTo(map);
+        marker3.addTo(map);
+        marker4.addTo(map); 
+        marker5.addTo(map);
     });
 }

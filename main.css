@@ -261,3 +261,14 @@ select:hover, select:focus, input:hover, input:focus {
 #reserve:hover {
   background: #101010;
 }
+
+/* ----------------- RESPONSIVE -------------------*/
+
+@media (max-width: 780px) {
+
+  ul li a {
+    font-size: 1em;
+    width: 70px;
+  }
+
+}
