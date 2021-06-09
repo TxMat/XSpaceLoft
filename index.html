@@ -41,29 +41,32 @@
   <script src="index.js"></script>
 
   <div id="container-filter">
-    <input type="search" id="site-search" placeholder="Search preferences"><br id="br">
     <div id="container-filtre">
         <select id="ch" name="Filtre 1">
-          <optgroup label="Filtre 1">
-            <option value="V1">V1</option>
-            <option value="V2" selected>V2</option>
-            <option value="V3" >V3</option>
+          <optgroup label="Price">
+            <option value="V1" selected>Price (default)</option>
+            <option value="V2">30$/night ~ 60$/night</option>
+            <option value="V3">60$/night ~ 80$/night</option>
+            <option value="V4">80$/night and over</option>
           </optgroup>
         </select>
 
         <select id="ch" name="Filtre 2">
-          <optgroup label="Filtre 2">
-            <option value="V1">V1</option>
-            <option value="V2" selected>V2</option>
-            <option value="V3" >V3</option>
+          <optgroup label="Surface area">
+            <option value="V1" selected>Surface area (default)</option>
+            <option value="V2">10m² ~ 30m²</option>
+            <option value="V3">30m² ~ 60m²</option>
+            <option value="V4">60m² ~ 80m²</option>
+            <option value="V5">80m² and over</option>
           </optgroup>
         </select>
 
         <select id="ch" name="Filtre 2">
-          <optgroup label="Filtre 1">
-            <option value="V1">V1</option>
-            <option value="V2" selected>V2</option>
-            <option value="V3" >V3</option>
+          <optgroup label="Rooms">
+            <option value="V1" selected>Rooms (default)</option>
+            <option value="V2">1 ~ 2</option>
+            <option value="V3">2 ~ 3</option>
+            <option value="V4">3 and over</option>
           </optgroup>
         </select>
     </div>
