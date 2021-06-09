@@ -16,18 +16,3 @@ $(document).ready(function() {
     
 
 });
-
-$(window).resize(function() {
-
-    if ($(window).width()<=780) {
-
-        $("#container-filter").fadeOut();
-        $("#filter").css("border-radius","50px");
-
-    } else {
-        
-        $("#container-filter").fadeIn();
-        
-
-    }
-});
